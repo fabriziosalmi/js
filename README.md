@@ -8,22 +8,22 @@ Basic JS snippets
 ```
 <html>
 <body>
-<head>
-<style></style>
-</head>
-<body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$.getJSON( "api.json", function( data ) {
-    var items = [];
-    $parent = $("#json_export");
-    $.each( data, function( key, val ) {
-    $parent.append( "" + key + " : " + val + "<br>" );
-  });
-});
-</script>
-<div id="json_export"></div>
-</body>
+    <head>
+        <style></style>
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $.getJSON("api.json", function(data) {
+                var items = [];
+                $parent = $("#json_export");
+                $.each(data, function(key, val) {
+                    $parent.append("" + key + " : " + val + "<br>");
+                });
+            });
+        </script>
+        <div id="json_export"></div>
+    </body>
 </html>
 ```
 
