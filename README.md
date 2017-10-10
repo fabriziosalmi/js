@@ -8,13 +8,17 @@ Basic JS snippets
 ```
 <html>
 <body>
+<head>
+<style></style>
+</head>
+<body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $.getJSON( "api.json", function( data ) {
     var items = [];
     $parent = $("#json_export");
     $.each( data, function( key, val ) {
-    $parent.append( "<p>" + key + " : " + val + "</p>" );
+    $parent.append( "" + key + " : " + val + "<br>" );
   });
 });
 </script>
@@ -27,9 +31,9 @@ $.getJSON( "api.json", function( data ) {
 
 ```
 {
-  "one": "Singular sensation",
-  "two": "Beady little eyes",
-  "three": "Little birds pitch by my doorstep"
+  "key1": "value1",
+  "key2": "value2",
+  "key3": "value3"
 }
 ```
 
